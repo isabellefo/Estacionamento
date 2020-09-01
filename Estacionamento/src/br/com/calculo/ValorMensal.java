@@ -1,6 +1,6 @@
 package br.com.calculo;
 
-public class ValorMensal extends CalculaValor{
+public class ValorMensal extends CalculoValor{
 	
 	private final double mes = 2592E6;
 	

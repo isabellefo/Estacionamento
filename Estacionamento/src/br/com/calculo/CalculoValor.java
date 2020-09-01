@@ -1,10 +1,10 @@
 package br.com.calculo;
 
-public abstract class CalculaValor{
+public abstract class CalculoValor{
 	
 	public double periodo = 0;
 	
-	public CalculaValor(long periodo) {
+	public CalculoValor(long periodo) {
 		this.periodo = periodo;
 	}
 

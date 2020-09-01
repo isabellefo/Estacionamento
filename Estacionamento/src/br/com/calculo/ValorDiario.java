@@ -1,6 +1,6 @@
 package br.com.calculo;
 
-public class ValorDiario extends CalculaValor{
+public class ValorDiario extends CalculoValor{
 	
 	private final double dia = 86400000;
 	
