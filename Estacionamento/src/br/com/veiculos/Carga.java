@@ -10,11 +10,11 @@ public class Carga extends Veiculo {
 		this.valorCarga = valorCarga;
 	}
 	
-	public double getTaxaCarga() {
+	private double getTaxaCarga() {
 		return valorCarga * 0.2;
 	}
 	
-	public double getTaxaEixos() {
+	private double getTaxaEixos() {
 		return eixos/4;
 	}
 	
