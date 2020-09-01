@@ -1,6 +1,6 @@
-package br.com.fatec;
+package br.com.calculo;
 
-import veiculos.Veiculo;
+import br.com.veiculos.Veiculo;
 
 public class ContaEstacionamento {
 	
