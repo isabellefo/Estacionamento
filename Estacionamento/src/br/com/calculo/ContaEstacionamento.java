@@ -1,4 +1,4 @@
-package br.com.fatec;
+package br.com.calculo;
 
 import veiculos.Veiculo;
 
