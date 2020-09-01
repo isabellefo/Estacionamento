@@ -1,4 +1,4 @@
-package app;
+package br.com.app;
 
 import java.util.Scanner;
 
