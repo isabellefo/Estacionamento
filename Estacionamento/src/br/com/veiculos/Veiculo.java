@@ -1,4 +1,4 @@
-package veiculos;
+package br.com.veiculos;
 
 public class Veiculo {
 

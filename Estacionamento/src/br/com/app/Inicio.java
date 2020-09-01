@@ -1,11 +1,11 @@
-package app;
+package br.com.app;
 
 import java.util.Scanner;
 
-import br.com.fatec.ContaEstacionamento;
-import br.com.fatec.ValorDiario;
-import br.com.fatec.ValorHora;
-import br.com.fatec.ValorMensal;
+import br.com.calculo.ContaEstacionamento;
+import br.com.calculo.ValorHora;
+import br.com.calculo.ValorDiario;
+import br.com.calculo.ValorMensal;
 
 public class Inicio {
 	static Scanner scanner = new Scanner(System.in);
