@@ -1,5 +1,7 @@
 package br.com.fatec;
 
+import veiculos.Veiculo;
+
 public class ContaEstacionamento {
 	
 	public Veiculo veiculo;

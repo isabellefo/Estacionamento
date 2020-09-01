@@ -1,6 +1,11 @@
-package br.com.fatec;
+package app;
 
 import java.util.Scanner;
+
+import br.com.fatec.ContaEstacionamento;
+import br.com.fatec.ValorDiario;
+import br.com.fatec.ValorHora;
+import br.com.fatec.ValorMensal;
 
 public class Inicio {
 	static Scanner scanner = new Scanner(System.in);
@@ -16,7 +21,7 @@ public class Inicio {
 		
 		System.out.println("Digite a entrada no estacionamento");
 		inicio = scanner.nextInt();
-		System.out.println("Digite o hor·rio de entrada");
+		System.out.println("Digite o hor√°rio de entrada");
 		fim = scanner.nextInt();
 		
 		long periodo = fim - inicio;

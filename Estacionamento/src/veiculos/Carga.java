@@ -1,4 +1,4 @@
-package br.com.fatec;
+package veiculos;
 
 public class Carga extends Veiculo{
 
