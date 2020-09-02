@@ -6,9 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import calculo.ValorDiario;
-import calculo.ValorHora;
-import calculo.ValorMensal;
+import estacionamento.ContaEstacionamento;
+import estacionamento.ValorDiario;
+import estacionamento.ValorHora;
+import estacionamento.ValorMensal;
 import veiculo.Passeio;
 
 
