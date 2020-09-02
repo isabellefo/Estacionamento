@@ -1,17 +1,17 @@
 package estacionamento;
 
+import java.util.concurrent.TimeUnit;
+
+import veiculo.Veiculo;
+
 public class ValorHora implements CalculoValor{
 	
-	private final double hora = 3600000;
-	
-	public ValorHora(long periodo) {
-		super(periodo);
-		// TODO Auto-generated constructor stub
+	private long calcTempo(long periodo) {
+		return TimeUnit.MILLISECONDS.toHours(periodo) + 1;
 	}
-	
 	@Override
-	public double valorConta() {
-		return 2.0*Math.ceil((periodo)/hora);
+	public double valorConta(Veiculo veiculo, long periodo) {
+		return veiculo.getTaxaHora() * calcTempo(periodo);
 	}
 
 }

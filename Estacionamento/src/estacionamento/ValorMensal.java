@@ -1,18 +1,18 @@
 package estacionamento;
 
+import java.util.concurrent.TimeUnit;
+
+import veiculo.Veiculo;
+
 public class ValorMensal implements CalculoValor{
-	
-	private final double mes = 2592E6;
-	
-	public ValorMensal(long periodo) {
-		super(periodo);
-		// TODO Auto-generated constructor stub
+
+	private long calcTempo(long periodo) {
+		long dias = TimeUnit.MILLISECONDS.toDays(periodo); 
+		return (long) Math.ceil(dias / 30.0);
 	}
-
-
 	@Override
-	public double valorConta() {
-		return 300.0*Math.ceil((periodo)/mes);
+	public double valorConta(Veiculo veiculo, long periodo) {
+		return veiculo.getTaxaMes() * calcTempo(periodo);
 	}
 	
 	
