@@ -1,11 +1,11 @@
-package br.com.estacionamento;
+package estacionamento;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import br.com.veiculos.Veiculo;
+import veiculos.Veiculo;
 
 public class ContaEstacionamento {
 	private static final DateFormat ISO8601 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");

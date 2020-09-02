@@ -1,4 +1,4 @@
-package br.com.veiculos;
+package veiculos;
 
 public class Passeio extends Veiculo{	
 	

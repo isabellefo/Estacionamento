@@ -1,8 +1,8 @@
-package br.com.estacionamento;
+package estacionamento;
 
 import java.util.concurrent.TimeUnit;
 
-import br.com.veiculos.Veiculo;
+import veiculos.Veiculo;
 
 public class ValorDiario implements CalculoValor{
 	

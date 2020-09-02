@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="br.com.estacionamento.CalculoValor" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/CalculoValor.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <interface id="1" language="java" name="estacionamento.CalculoValor" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/estacionamento/CalculoValor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="598" y="524"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -11,9 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="2" language="java" name="br.com.estacionamento.ValorMensal" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorMensal.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="estacionamento.ValorMensal" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/estacionamento/ValorMensal.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="379" y="750"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -21,9 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="br.com.estacionamento.ValorDiario" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorDiario.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="estacionamento.ValorDiario" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/estacionamento/ValorDiario.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="594" y="776"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -31,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="br.com.estacionamento.ValorHora" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorHora.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="estacionamento.ValorHora" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/estacionamento/ValorHora.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="789" y="754"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -40,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="br.com.estacionamento.ContaEstacionamento" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ContaEstacionamento.java" binary="false" 
+  <class id="5" language="java" name="estacionamento.ContaEstacionamento" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/estacionamento/ContaEstacionamento.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="594" y="314"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

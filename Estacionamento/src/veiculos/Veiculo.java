@@ -1,4 +1,4 @@
-package br.com.veiculos;
+package veiculos;
 
 public abstract class Veiculo {
 	public static double taxaBase = 1;

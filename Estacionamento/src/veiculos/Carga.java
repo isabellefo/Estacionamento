@@ -1,4 +1,4 @@
-package br.com.veiculos;
+package veiculos;
 
 public class Carga extends Veiculo {
 	private int eixos;
