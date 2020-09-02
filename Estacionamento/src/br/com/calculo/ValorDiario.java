@@ -1,22 +1,17 @@
 package br.com.calculo;
 
+import java.util.concurrent.TimeUnit;
+
 import br.com.veiculos.Veiculo;
 
-public class ValorDiario extends CalculoValor{
+public class ValorDiario implements CalculoValor{
 	
-	private static final double DIA = 86400000;
-	
-	public ValorDiario(long periodo) {
-		super(periodo);
-	}
-	
-	private double calcTempo() {
-		return Math.ceil((periodo)/DIA);
+	private double calcTempo(long perido) {
+		return TimeUnit.MILLISECONDS.toDays(perido) + 1;
 	}
 	
 	@Override
-	public double valorConta(Veiculo veiculo) {
-		return veiculo.getTaxaDia() * calcTempo();
+	public double valorConta(Veiculo veiculo, long periodo) {
+		return veiculo.getTaxaDia() * calcTempo(periodo);
 	}
-
 }
