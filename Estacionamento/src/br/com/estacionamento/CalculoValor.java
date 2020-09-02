@@ -1,4 +1,4 @@
-package br.com.calculo;
+package br.com.estacionamento;
 
 import br.com.veiculos.Veiculo;
 

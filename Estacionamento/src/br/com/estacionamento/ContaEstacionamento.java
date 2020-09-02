@@ -1,4 +1,4 @@
-package br.com.calculo;
+package br.com.estacionamento;
 
 import java.text.DateFormat;
 import java.text.ParseException;

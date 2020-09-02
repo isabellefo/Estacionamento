@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="br.com.calculo.CalculoValor" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/calculo/CalculoValor.java" binary="false" corner="BOTTOM_RIGHT">    
+  <interface id="1" language="java" name="br.com.estacionamento.CalculoValor" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/CalculoValor.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="598" y="524"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </class>  
-  <class id="2" language="java" name="br.com.calculo.ValorMensal" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/calculo/ValorMensal.java" binary="false" corner="BOTTOM_RIGHT">    
+  </interface>  
+  <class id="2" language="java" name="br.com.estacionamento.ValorMensal" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorMensal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="379" y="750"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +21,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="br.com.calculo.ValorDiario" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/calculo/ValorDiario.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="br.com.estacionamento.ValorDiario" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorDiario.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="594" y="776"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +31,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="br.com.calculo.ValorHora" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/calculo/ValorHora.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="br.com.estacionamento.ValorHora" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ValorHora.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="789" y="754"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +40,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="br.com.calculo.ContaEstacionamento" project="Estacionamento" 
-    file="/Estacionamento/Estacionamento/src/br/com/calculo/ContaEstacionamento.java" binary="false" 
+  <class id="5" language="java" name="br.com.estacionamento.ContaEstacionamento" project="Estacionamento" 
+    file="/Estacionamento/Estacionamento/src/br/com/estacionamento/ContaEstacionamento.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="594" y="314"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -59,18 +62,6 @@
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="9">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

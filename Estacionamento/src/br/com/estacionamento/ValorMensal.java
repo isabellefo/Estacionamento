@@ -1,4 +1,4 @@
-package br.com.calculo;
+package br.com.estacionamento;
 
 public class ValorMensal implements CalculoValor{
 	

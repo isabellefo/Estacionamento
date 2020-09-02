@@ -2,10 +2,10 @@ package br.com.app;
 
 import java.util.Scanner;
 
-import br.com.calculo.ContaEstacionamento;
-import br.com.calculo.ValorDiario;
-import br.com.calculo.ValorHora;
-import br.com.calculo.ValorMensal;
+import br.com.estacionamento.ContaEstacionamento;
+import br.com.estacionamento.ValorDiario;
+import br.com.estacionamento.ValorHora;
+import br.com.estacionamento.ValorMensal;
 
 public class Inicio {
 	static Scanner scanner = new Scanner(System.in);
