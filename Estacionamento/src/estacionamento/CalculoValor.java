@@ -1,6 +1,6 @@
 package estacionamento;
 
-import veiculos.Veiculo;
+import veiculo.Veiculo;
 
 public interface CalculoValor{
 	public abstract double valorConta(Veiculo veiculo, long periodo); 

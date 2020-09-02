@@ -2,7 +2,7 @@ package estacionamento;
 
 import java.util.concurrent.TimeUnit;
 
-import veiculos.Veiculo;
+import veiculo.Veiculo;
 
 public class ValorDiario implements CalculoValor{
 	
