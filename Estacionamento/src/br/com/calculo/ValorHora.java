@@ -1,6 +1,6 @@
 package br.com.calculo;
 
-public class ValorHora extends CalculoValor{
+public class ValorHora implements CalculoValor{
 	
 	private final double hora = 3600000;
 	
