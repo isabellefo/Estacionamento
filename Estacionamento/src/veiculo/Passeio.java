@@ -1,4 +1,4 @@
-package veiculos;
+package veiculo;
 
 public class Passeio extends Veiculo{	
 	

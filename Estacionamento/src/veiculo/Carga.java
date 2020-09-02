@@ -1,4 +1,4 @@
-package veiculos;
+package veiculo;
 
 public class Carga extends Veiculo {
 	private int eixos;
