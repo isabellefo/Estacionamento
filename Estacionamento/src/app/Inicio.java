@@ -31,11 +31,11 @@ public class Inicio {
 		
 		calc.veiculo = new Passeio(2.0, 26.0, 300.0);
 		
-		if (periodo < 12 * hora) {
+		if (periodo <= 12 * hora) {
 			
 			calc.conta = new ValorHora(periodo);
 			
-		}else if(periodo >= 12 * hora && periodo < 15 * dia) {
+		}else if(periodo > 12 * hora && periodo < 15 * dia) {
 			
 			calc.conta = new ValorDiario(periodo);
 			
