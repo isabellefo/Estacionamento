@@ -35,7 +35,7 @@ public class Inicio {
 			
 			calc.conta = new ValorHora(periodo);
 			
-		}else if(periodo > 12 * hora && periodo < 15 * dia) {
+		}else if(periodo >= 12 * hora && periodo < 15 * dia) {
 			
 			calc.conta = new ValorDiario(periodo);
 			
