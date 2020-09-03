@@ -24,7 +24,7 @@ public class Inicio {
 		conta.setSaida("2020-09-01T08:09:00");
 		conta.setVeiculo(carga);
 		double cargaHora = conta.calcular();
-		esperado = 4 * 1 + 2 + 20;
+		esperado = (4 + 2 + 20) * 1;
 		testar("Teste de carro de carga e cobrança por hora", cargaHora, esperado);
 		
 		//valorDia
