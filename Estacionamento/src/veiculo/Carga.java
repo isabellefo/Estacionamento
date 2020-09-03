@@ -3,6 +3,8 @@ package veiculo;
 public class Carga extends Veiculo {
 	private int eixos;
 	private double valorCarga;
+	private static final int EIXO_POR_REAL = 2;
+	private static final double TAXA_DE_CUSTO = 0.2;
 	
 	public Carga(double taxaHora, double taxaDia, double taxaMes, int eixos, double valorCarga) {
 		super(taxaHora, taxaDia, taxaMes);
@@ -11,11 +13,11 @@ public class Carga extends Veiculo {
 	}
 	
 	private double getTaxaCarga() {
-		return valorCarga * 0.2;
+		return valorCarga * Carga.TAXA_DE_CUSTO;
 	}
 	
 	private double getTaxaEixos() {
-		return eixos / 2;
+		return eixos / Carga.EIXO_POR_REAL;
 	}
 	
 	private double getTaxa(double taxaTempo) {
