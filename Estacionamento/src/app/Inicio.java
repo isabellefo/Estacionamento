@@ -11,10 +11,7 @@ public class Inicio {
 		double esperado;
 		Veiculo passeio = new Passeio(2, 26, 300);
 		Veiculo carga = new Carga(4, 24, 52, 4, 100);
-		CalculoValor valorHora = new ValorHora();
-		CalculoValor valorDiario = new ValorDiario();
-		CalculoValor valorMensal = new ValorMensal();
-		ContaEstacionamento conta =  new ContaEstacionamento(passeio,"2020-09-01T07:10:00", valorHora);
+		ContaEstacionamento conta =  new ContaEstacionamento(passeio,"2020-09-01T07:10:00");
 		//valorHora
 		conta.setSaida("2020-09-01T08:09:00");
 		double passeioHora = conta.calcular();
@@ -28,7 +25,6 @@ public class Inicio {
 		testar("Teste de carro de carga e cobrança por hora", cargaHora, esperado);
 		
 		//valorDia
-		conta.setConta(valorDiario);
 		conta.setSaida("2020-09-02T07:10:00");
 		conta.setVeiculo(passeio);
 		double passeioDia = conta.calcular();
@@ -42,7 +38,6 @@ public class Inicio {
 		testar("Teste de carro de carga e cobrança por dia", cargaDia, esperado);
 		
 		//ValorMes
-		conta.setConta(valorMensal);
 		conta.setSaida("2020-11-02T00:00:00");
 		conta.setVeiculo(passeio);
 		double passeioMes = conta.calcular();
