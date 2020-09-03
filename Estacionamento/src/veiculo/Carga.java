@@ -15,7 +15,7 @@ public class Carga extends Veiculo {
 	}
 	
 	private double getTaxaEixos() {
-		return eixos/4;
+		return eixos / 2;
 	}
 	
 	private double getTaxa(double taxaTempo) {

@@ -14,10 +14,11 @@ public class ContaEstacionamento {
 	private Date chegada;
 	private Date saida;
 	
-	public ContaEstacionamento(Veiculo veiculo, CalculoValor conta, String chegada) throws ParseException {
+	public ContaEstacionamento(Veiculo veiculo, String chegada, CalculoValor conta) throws ParseException {
 		this.veiculo = veiculo;
-		this.conta = conta;
 		this.chegada = ISO8601.parse(chegada);
+		this.conta = conta;
+
 	}
 	
 	public void setConta(CalculoValor conta) {
@@ -28,7 +29,11 @@ public class ContaEstacionamento {
 		this.saida = ISO8601.parse(saida);
 	}
 	
-	public double calcular(CalculoValor conta) {
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
+	}
+	
+	public double calcular() {
 		long periodo = calcPeriodo();
 		return conta.valorConta(veiculo, periodo);
 	}

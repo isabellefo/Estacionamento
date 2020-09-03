@@ -1,45 +1,76 @@
 package app;
 
-import java.util.Scanner;
+import java.text.ParseException;
 
-import estacionamento.ContaEstacionamento;
-import estacionamento.ValorDiario;
-import estacionamento.ValorHora;
-import estacionamento.ValorMensal;
+import estacionamento.*;
+import veiculo.*;
 
 public class Inicio {
-	static Scanner scanner = new Scanner(System.in);
-	public static void main(String[] args) {
+	public static boolean sucesso = true;
+	public static void main(String[] args) throws ParseException {
+		double esperado;
+		Veiculo passeio = new Passeio(2, 12, 26);
+		Veiculo carga = new Carga(4, 24, 52, 4, 100);
+		CalculoValor valorHora = new ValorHora();
+		CalculoValor valorDiario = new ValorDiario();
+		CalculoValor valorMensal = new ValorMensal();
+		ContaEstacionamento conta =  new ContaEstacionamento(passeio,"2020-09-01T07:10:00", valorHora);
+		//valorHora
+		conta.setSaida("2020-09-01T08:09:00");
+		double passeioHora = conta.calcular();
+		esperado = 2 * 1;
+		testar("Teste de carro de passeio e cobrança por hora", passeioHora, esperado);
 		
-		ContaEstacionamento calc = new ContaEstacionamento();
+		conta.setSaida("2020-09-01T08:09:00");
+		conta.setVeiculo(carga);
+		double cargaHora = conta.calcular();
+		esperado = 4 * 1 + 2 + 20;
+		testar("Teste de carro de carga e cobrança por hora", cargaHora, esperado);
 		
-		long inicio, fim;
-		double hora = 3600000;
-		double dia = 86400000;
-		double mes = 2592E6;
-		double value = 0;
+		//valorDia
+		conta.setConta(valorDiario);
+		conta.setSaida("2020-09-02T07:10:00");
+		conta.setVeiculo(passeio);
+		double passeioDia = conta.calcular();
+		esperado = 12 * 2;
+		testar("Teste de carro de passeio e cobrança por dia", passeioDia, esperado);  
 		
-		System.out.println("Digite a entrada no estacionamento");
-		inicio = scanner.nextInt();
-		System.out.println("Digite o horário de entrada");
-		fim = scanner.nextInt();
+		conta.setSaida("2020-09-02T07:10:00");
+		conta.setVeiculo(carga);
+		double cargaDia = conta.calcular();
+		esperado = (24 + 2 + 20) * 2;
+		testar("Teste de carro de carga e cobrança por dia", cargaDia, esperado);
 		
-		long periodo = fim - inicio;
+		//ValorMes
+		conta.setConta(valorMensal);
+		conta.setSaida("2020-11-02T00:00:00");
+		conta.setVeiculo(passeio);
+		double passeioMes = conta.calcular();
+		esperado = 26 * 3;
+		testar("Teste de carro de passeio e cobrança por mes", passeioMes, esperado);  
 		
-		if (periodo < 12 * hora) {
-			calc.conta = new ValorHora(periodo);
-			value = calc.conta.valorConta();
-		}else if(periodo > 12 * hora && periodo < 15 * dia) {
-			calc.conta = new ValorDiario(periodo);
-		}else {
-			calc.conta = new ValorMensal(periodo);
+		conta.setSaida("2020-11-02T00:00:00");
+		conta.setVeiculo(carga);
+		double cargaMes = conta.calcular();
+		esperado = (52  + 2 + 20) * 3;
+		testar("Teste de carro de carga e cobrança por mes", cargaMes, esperado);
+		
+		if(sucesso) {
+			System.out.println("SUCESSO");
+		} else {
+			System.out.println("ERRO");
 		}
-		
-		System.out.println(value);
-		
-		
-		
-
+	}
+	
+	public static void testar(String descricao, double recebido , double esperado) {
+		if(recebido == esperado) {
+			System.out.println("PASSOU " + descricao);
+		} else {
+			System.out.println("FALHOU " + descricao);
+			System.out.println("	esperado: " + esperado);
+			System.out.println("	recebido: " + recebido);
+			sucesso = false;
+		}
 	}
 
 }
