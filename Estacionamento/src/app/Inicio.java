@@ -9,7 +9,7 @@ public class Inicio {
 	public static boolean sucesso = true;
 	public static void main(String[] args) throws ParseException {
 		double esperado;
-		Veiculo passeio = new Passeio(2, 12, 26);
+		Veiculo passeio = new Passeio(2, 26, 300);
 		Veiculo carga = new Carga(4, 24, 52, 4, 100);
 		CalculoValor valorHora = new ValorHora();
 		CalculoValor valorDiario = new ValorDiario();
@@ -32,7 +32,7 @@ public class Inicio {
 		conta.setSaida("2020-09-02T07:10:00");
 		conta.setVeiculo(passeio);
 		double passeioDia = conta.calcular();
-		esperado = 12 * 2;
+		esperado = 26 * 2;
 		testar("Teste de carro de passeio e cobrança por dia", passeioDia, esperado);  
 		
 		conta.setSaida("2020-09-02T07:10:00");
@@ -46,7 +46,7 @@ public class Inicio {
 		conta.setSaida("2020-11-02T00:00:00");
 		conta.setVeiculo(passeio);
 		double passeioMes = conta.calcular();
-		esperado = 26 * 3;
+		esperado = 300 * 3;
 		testar("Teste de carro de passeio e cobrança por mes", passeioMes, esperado);  
 		
 		conta.setSaida("2020-11-02T00:00:00");
